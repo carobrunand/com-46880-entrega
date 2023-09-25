@@ -13,13 +13,7 @@ font-family: 'Questrial', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 */
-main{
-    flex-wrap: wrap;
-}
-footer{
-    flex-wrap: wrap;
-    width: 100%;
-}
+
 
 /* INICIO HEADER */
 header{
@@ -59,17 +53,12 @@ nav{
     height: 70px;
     display: flex;
 }
-nav #toggle, nav label{
-    display: none;
-}
-.nav-wrapper{
-    width: 100%;
-}
 
 
 /* INICIO MAIN */
 main{
-    background-color: #EAE8F6 ;
+    background-color: #EAE8F6;
+    width: 100%;
 }
 
 main p{
@@ -146,14 +135,14 @@ section h2{
 }
 .nuestros-prof-img{
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     justify-content: center;
     margin: 30px;
 }
 .profesional1{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 .profesional2{
@@ -163,7 +152,7 @@ section h2{
 }
 .profesional3{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .nuestros-prof h2{
@@ -477,6 +466,12 @@ section h2{
 
 /* INICIO FOOTER */
 
+footer{
+    width: 100%;
+    background-color: #D0AADA;
+    color: white;
+}
+
 .contacto-footer h2{
     color: white;
     text-align: center;
@@ -603,9 +598,6 @@ input{
     justify-content: space-evenly;
 }
 
-.datos-footer{
-    padding: 20px;
-}
 .grid-footer{
     display: grid;
     grid-template-columns: 25% 50%;
@@ -625,6 +617,7 @@ input{
     grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
     align-items: center;
     justify-content: start;
+    padding: 20px;
 }
 .grid-form{
     grid-column: 2 / 3;
@@ -634,76 +627,12 @@ input{
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
-footer{
-    background-color: #D0AADA;
-    color: white;
-}
 
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES */
-
-@media (max-width: 1024px){
-    body{
-        background-color: #EAE8F6;
-    }
-    .nuestros-prof-img{
-        gap: 50px;
-    }
-}
-@media (max-width: 768px){
-    body{
-        background-color: #EAE8F6;
-    }
-
-    header{
-        width: 100%;
-        background-color: #5B507B;
-    }
-    .nav-bar li a{
-        background-color: #5B507B;
-        box-shadow: 5px 5px 10px #4a4164;
-    }
-    .fotos-banner{
-        display: grid;
-    }
-    
-    main p{
-        width: 100%;
-    }
-    .trabajos-grid{
-        margin-left: 230px;
-    }
-    .nuestros-prof-img{
-        margin-left: 300px;
-        display: grid;
-        gap: 160px;
-    }
-
-    footer{
-        background-color: #5B507B;
-    }
-    .preguntas-frecuentes button{
-        background-color: #5B507B;
-        border-color: #5B507B;
-        box-shadow: 5px 5px 10px #4a4164;
-    }
-    form{
-        box-shadow: 5px 5px 10px #4a4164;
-    }
-
-}
 
 
 @media (max-width: 425px){
-    header{
-        background-color: #D0AADA;
+    body{
+        background-color: #EAE8F6;
     }
     nav{
         flex-direction: column;
@@ -715,214 +644,94 @@ footer{
         padding: 20px;
     }
     .nav-bar li a{
-        font-size: 14px;
+        font-size: 16px;
         background-color: #D0AADA;
     }
     .nav-logo{
         height: auto;
     }
 
-
-    body{
-        background-color: #EAE8F6;
-    }
-
-
-
     .fotos-banner{
         display: grid;
         padding-top: 250px;
-        gap: 10px;
-    }
-    .portada-centro{
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-    .portada-izquierda{
-        display: none;
+        padding-left: 75px;
+        gap: 7px;
+        padding-bottom: 30px;
     }
     .portada-derecha{
         display: none;
     }
-    .maquillaje-prof{
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-        display: flex;
-        justify-content: center;
+    .portada-izquierda{
+        display: none;
     }
 
-    section h2{
-        text-align: start;
-        padding-left: 5px;
-        font-size: 19px;
-    }
     main p{
         width: 100%;
         text-align: center;
         font-size: 15px;
     }
-
-    .img-sobrenos{
-        display: grid;
+    section h2{
         width: 100%;
-        padding: 20px;
     }
-
+    .img-sobrenos{
+        padding-left: 600px;
+    }
+    .botones{
+        display: flex;
+        justify-content: end;
+    }
     .trabajos-grid{
-        width: 100%;
-        grid-template-columns: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
-        gap: 25px;
-        margin-bottom: 0px;
-        margin-right: 90px;
+        padding-left: 150px;
+        gap: 20px;
     }
     .img1{
+        grid-column: 3 / 5;
         grid-row: 1 / 2;
-        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
     }
     .img2{
+        grid-column: 5 / 6;
         grid-row: 1 / 2;
-        grid-column: 4 / 5;
     }
     .img3{
+        grid-column: 3 / 5;
         grid-row: 2 / 3;
-        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
     }
     .img4{
+        grid-column: 5 / 6;
         grid-row: 2 / 3;
-        grid-column: 4 / 5;
     }
     .img5{
+        grid-column: 3 / 5;
         grid-row: 3 / 4;
-        grid-column: 4 / 5;
+        display: flex;
+        justify-content: center;
+    }
+    .img6{
+        grid-column: 5 / 6;
+        grid-row: 3 / 4;
     }
     .img7{
+        grid-column: 3 / 5;
         grid-row: 4 / 5;
-        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
     }
     .img8{
+        grid-column: 5 / 6;
         grid-row: 4 / 5;
-        grid-column: 4 / 5;
-    }
-
-    .botones{
-        margin-left: 170px;
-    }
-    .container-grid{
-        margin-top: 80px;
-        margin-bottom: 70px;
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        height: 100vh;
-    }
-
-
-
-
-    .nuestros-prof-img{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
-        margin-right: 100px;
-    }
-    .profesional3{
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
-    }
-    .nuestros-prof{
-        padding-left: 130px;
-    }
-    .container-grid-2{
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        height: 80vh;
-        margin-right: 50px;
-    }
-
-    .preguntas-frecuentes button{
-        background-color: #D0AADA;
-        border: 3px solid #D0AADA;
-        box-shadow: 5px 5px 7px rgb(92, 92, 92);
-    }
-    .grid-footer{
-        background-color: #D0AADA;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 10% 35% 35% 10% 5%;
-    }
-    .contacto-footer{
-        font-size: 20px;
-        grid-column: 1 / 2;
-        display: flex;
-        justify-content: flex-end;
-    }
-    footer div h2{
-        font-size: 14px;
-    }
-    .preguntas-frecuentes button a{
-        font-size: 14px;
-    }
-    .grid-form{
-        grid-row: 3 / 4;
-        grid-column: 1 / 2;
-        width: 60%;
-    }
-    .grid-redes{
-        grid-row: 4 / 6;
-        grid-column: 1 / 2;
-    }
-    form{
-        margin-top: 0;
-        margin-left: 20px;
-        margin-bottom: 130px;
     }
 
 
 }
 
-@media(max-width: 375px){
-    header{
-        background-color: #5B507B;
-    }
-    .nav-bar li a{
-        background-color: #5B507B;
-        box-shadow: 5px 5px 10px #4a4164;
-    }
 
 
-    footer{
-        background-color: #5B507B;
-    }
-    .preguntas-frecuentes button{
-        background-color: #5B507B;
-        border-color: #5B507B;
-        box-shadow: 5px 5px 10px #4a4164;
-    }
-    form{
-        box-shadow: 5px 5px 10px #4a4164;
-    }
 
-}
 
-@media (max-width: 320px){
-    header{
-        background-color: #D0AADA;
-        width: 100%;
-    }
-    .nav-bar li a{
-        font-size: 15px;
-        background-color: #D0AADA;
-        box-shadow: 5px 5px 10px rgb(92, 92, 92);
-    }
-    .preguntas-frecuentes button{
-        background-color: #D0AADA;
-        border: 3px solid #D0AADA;
-        box-shadow: 5px 5px 7px rgb(92, 92, 92);
-
-    }
-}
