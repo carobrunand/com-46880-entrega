@@ -63,6 +63,10 @@ nav #toggle, nav label{
     display: none;
 }
 
+.nav-bar li a:hover{
+    background-color: #D0AADA;
+}
+
 /* INICIO MAIN */
 main{
     background-color: #EAE8F6;
@@ -127,6 +131,9 @@ section h2{
     text-align: center;
 }
 
+.fotos-banner div img:hover{
+    box-shadow: 0px 0px 10px rgb(100, 99, 99);
+}
 
 .img-sobrenos{
     display: flex;
@@ -134,6 +141,9 @@ section h2{
     margin-right: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.img-sobrenos img:hover{
+    box-shadow: 0px 0px 10px rgb(100, 99, 99);
 }
 
 /* SOBRE NOSOTROS */
@@ -169,10 +179,16 @@ section h2{
     margin-bottom: 0px;
     padding-bottom: 20px;
 }
+.nuestros-prof-img div img:hover{
+    box-shadow: 0px 0px 10px rgb(100, 99, 99);
+}
 
 /* NUESTROS TRABAJOS */
 .trabajos-fotos{
     padding-top: 120px;
+}
+.trabajos-grid div img:hover{
+    box-shadow: 0px 0px 10px rgb(100, 99, 99);
 }
 .trabajos-grid{
     display: grid;
@@ -404,8 +420,10 @@ section h2{
     text-decoration: none;
     text-shadow: 1px 1px 10px grey;
 }
-
-
+.botones button:hover{
+    background-color: #D0AADA;
+    border: 2px solid #D0AADA;
+}
 
 
 
@@ -591,6 +609,11 @@ input{
 .input-boton{
     width: 95%;
 }
+input:focus{
+    border-color: grey;
+    box-shadow: 2px 2px 5px grey;
+}
+
 
 .boton-enviar{
     display: flex;
@@ -646,6 +669,9 @@ input{
     .nav-bar li a{
         background-color: #D0AADA;
     }
+    .nav-bar li a:hover{
+        background-color: #5B507B;
+    }
 
     .fotos-banner{
         display: grid;
@@ -673,6 +699,10 @@ input{
 
 
 @media (max-width: 768px){
+    .nav-bar li a:hover{
+        background-color: #D0AADA;
+        color: #5B507B;
+    }
     nav .menu{
         width: 100%;
         height: 0;
