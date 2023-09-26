@@ -922,3 +922,25 @@ input:focus{
     }
 }
 
+
+
+/* MEDIA Q SERVICIOS */
+
+@media (max-width: 768px){
+    .servicios-ofrecemos{
+        padding-top: 200px;
+    }
+}
+@media (max-width: 375px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-logo{
+        height: auto;
+    }
+    .servicios-ofrecemos{
+        padding-top: 320px;
+    }
+}
