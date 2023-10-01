@@ -80,6 +80,7 @@ main p{
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: justify;
 }
 
 section h2{
@@ -149,7 +150,7 @@ section h2{
 /* SOBRE NOSOTROS */
 /* NUESTROS PROFESIONALES */
 .prof{
-    padding-top: 120px;
+    padding-top: 150px;
 }
 .nuestros-prof-img{
     display: grid;
@@ -185,7 +186,7 @@ section h2{
 
 /* NUESTROS TRABAJOS */
 .trabajos-fotos{
-    padding-top: 120px;
+    padding-top: 150px;
 }
 .trabajos-grid div img:hover{
     box-shadow: 0px 0px 10px rgb(100, 99, 99);
@@ -261,7 +262,7 @@ section h2{
 
 /* CONSULTANOS */
 .servicios-ofrecemos{
-    padding-top: 120px;
+    padding-top: 150px;
 }
 .consul{
     padding-top: 120px;
@@ -341,7 +342,7 @@ section h2{
 
 /* PRODUCCIONES */
 .produc{
-    padding-top: 120px;
+    padding-top: 150px;
     margin-left: 10px;
 }
 .reservar-turno h3{
@@ -659,18 +660,37 @@ input:focus{
     grid-row: 3 / 4;
 }
 
+/* BOOSTRAP */
+.navbar-custom {
+    background-color: #D0AADA;
+}
 
+.navbar-nav .nav-link span{
+    color: #EAE8F6;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 10px grey;
+    padding: 8px;
+    border-radius: 9px;
+    box-shadow: 5px 5px 10px rgb(92, 92, 92);
+}
+
+/* MEDIA */
 
 
 @media (max-width: 1024px){
+    header{
+        z-index: 1;
+    }
     body{
         background-color: #EAE8F6;
     }
     .nav-bar li a{
-        background-color: #D0AADA;
+        background-color: #d0aada;
     }
     .nav-bar li a:hover{
-        background-color: #5B507B;
+        background-color: #5b507b;
     }
 
     .fotos-banner{
@@ -679,7 +699,6 @@ input:focus{
         grid-template-rows: auto;
         gap: 50px;
         margin-bottom: 20px;
-
     }
     .portada-izquierda{
         transform: scale(0.8);
@@ -886,6 +905,16 @@ input:focus{
 }
 
 @media (max-width: 375px){
+    .nav-logo{
+        margin-right: 55px;
+    }
+    .fotos-banner{
+        padding-top: 150px;
+        padding-bottom: 30px;
+    }
+    .maquillaje-prof{
+        display: none;
+    }
     main p{
         text-align: center;
     }
@@ -924,23 +953,20 @@ input:focus{
 
 
 
-/* MEDIA Q SERVICIOS */
 
-@media (max-width: 768px){
-    .servicios-ofrecemos{
-        padding-top: 200px;
+/* MEDIA NUESTROS TRABAJOS */
+@media(max-width: 375px){
+    .trabajos-fotos{
+        padding-top: 230px;
     }
-}
-@media (max-width: 375px){
-    nav{
-        display: flex;
-        flex-direction: column;
+    .trabajos-grid{
+        display: grid;
+        gap: 10px;
         justify-content: center;
     }
-    .nav-logo{
-        height: auto;
-    }
-    .servicios-ofrecemos{
-        padding-top: 320px;
+}
+@media(max-width: 320px){
+    .grid-footer{
+        width: 100%;
     }
 }
