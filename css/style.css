@@ -14,7 +14,9 @@ font-family: 'Roboto', sans-serif;
 
 */
 
-
+body{
+    background-color: #EAE8F6 ;
+}
 /* INICIO HEADER */
 header{
     background-color: #D0AADA;
@@ -395,7 +397,12 @@ section h2{
     border-radius: 30px;
     width: 45%;
 }
-
+.main-registrarse{
+    padding-left: 90px;
+    width: 90%;
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
 
 /* BOTONES CONSULTANOS,REGISTRARSE */
 .botones{
@@ -676,12 +683,6 @@ input:focus{
     box-shadow: 5px 5px 10px rgb(92, 92, 92);
 }
 
-.main-registrarse{
-    padding-left: 90px;
-    padding-right: 220px;
-    padding-top: 180px;
-    padding-bottom: 50px;
-}
 
 /* MEDIA */
 
