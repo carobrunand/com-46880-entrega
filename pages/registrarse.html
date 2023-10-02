@@ -8,7 +8,7 @@
     rel="stylesheet"
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
 />
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -32,33 +32,18 @@
             </nav>
         </div>
     </header>
-    <main>
-        
-        <section class="registrar">
-            <div>
-                <h3>registrarse</h3>
-            </div>
-        <form action="" class="form-registrarse">
-        <div>
-            <fieldset  class="field-registrarse">
-                <legend>Usuario</legend>
-                <label for="Usuario"></label>
-                <input type="text" name="usuario" id="Usuario" required class="input-registrarse">
-            </fieldset>
+    <main class="main-registrarse">
+        <div class="mb-3">
+            <label for="usuario" class="form-label">Usuario:</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
         </div>
-        <div>
-            <fieldset class="field-registrarse">
-                <legend>Contraseña</legend>
-                <label for="Contraseña"></label>
-                <input type="text" name="Contraseña" id="Contraseña" required class="input-registrarse">
-            </fieldset>
-            <div class="boton-enviar">
-                <input type="submit">
-            </div>
+        <div class="mb-3">
+            <label for="=contraseña" class="form-label">Contraseña:</label>
+            <input type="text" class="form-control" id="contraseña" placeholder="Contraseña" required>
         </div>
-        </form>    
-        </section>
-
+        <div class="d-flex justify-content-center">
+            <input type="submit">
+        </div>
     </main>
     <footer class="grid-footer">
         <section class="contacto-footer">
@@ -114,6 +99,8 @@
 
 
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

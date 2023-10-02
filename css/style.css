@@ -676,6 +676,13 @@ input:focus{
     box-shadow: 5px 5px 10px rgb(92, 92, 92);
 }
 
+.main-registrarse{
+    padding-left: 90px;
+    padding-right: 220px;
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
 /* MEDIA */
 
 
@@ -864,14 +871,26 @@ input:focus{
         display: none;
     }
 
+    
     .nuestros-prof-img{
-        padding-left: 37px;
+        padding-left: 50px;
+        display: grid;
+        gap: 10px;
+    }
+    .profesional1{
+        transform: scale(0.9);
+    }
+    .profesional2{
+        transform: scale(0.9);
+    }
+    .profesional3{
+        transform: scale(0.9);
     }
     .grid-footer{
         display: grid;
         width: 100%;
         grid-template-columns: auto;
-        grid-template-rows: 10% 25% 45% 20%;
+        grid-template-rows: 10% 20% 20%;
     }
 
     .contacto-footer{
@@ -880,18 +899,18 @@ input:focus{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 10px;
     }
     .datos-footer{
         grid-column: 1 / 2 ;
-        grid-row: 2 / 3;
+        grid-row: 2 / 4;
         display: block;
         justify-content: center;
         align-items: center;
+        padding-left: 50px;
     }
     .grid-form{
-        grid-column: 1 / 2 ;
-        grid-row: 3 / 4;
-        width: 70%;
+        display: none;
     }
     .grid-redes{
         grid-column: 1 / 2 ;
@@ -899,6 +918,7 @@ input:focus{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 30px;
     }
 
     
@@ -918,6 +938,7 @@ input:focus{
     main p{
         text-align: center;
     }
+    
     .nuestros-prof-img{
         display: grid;
         width: 100%;
@@ -951,7 +972,14 @@ input:focus{
     }
 }
 
-
+@media (max-width: 320px){
+    .trabajos-grid{
+        padding-left: 90px;
+    }
+    .botones{
+        padding-left: 90px;
+    }
+}
 
 
 /* MEDIA NUESTROS TRABAJOS */
@@ -964,8 +992,51 @@ input:focus{
         gap: 10px;
         justify-content: center;
     }
+    .img1{
+        transform: scale(0.9);
+    }
+    .img2{
+        transform: scale(0.9);
+    }
+    .img3{
+        transform: scale(0.9);
+    }
+    .img4{
+        transform: scale(0.9);
+    }
+    .img5{
+        transform: scale(0.9);
+    }
+    .img6{
+        transform: scale(0.9);
+    }
+    .img7{
+        transform: scale(0.9);
+    }
+    .img8{
+        transform: scale(0.9);
+    }
+    .grid-footer{
+        display: grid;
+    }
+    .datos-footer{
+        display: block;
+        justify-content: center;
+        padding-left: 50px;
+    }
+    .grid-redes{
+        display: flex;
+        padding-left: 30px;
+    }
 }
 @media(max-width: 320px){
+    .trabajos-grid{
+        display: grid; 
+        padding-right: 20px;
+    }
+    .botones{
+        padding-left: 20px;
+    }
     .grid-footer{
         width: 100%;
     }
