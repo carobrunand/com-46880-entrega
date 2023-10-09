@@ -865,6 +865,10 @@ input:focus{
 }
 
 @media (max-width: 425px){
+    main p{
+        margin-left: 30px;
+        width: 390px;
+    }
     .sobre-maquillaje-art{
         margin-bottom: 30px;
     }
@@ -938,8 +942,17 @@ input:focus{
     }
     main p{
         text-align: center;
+        margin-left: 10px;
     }
-    
+    .sobre-maquillaje-art{
+        width: 420px;
+    }
+    .trabajos-grid{
+        padding-left: 140px;
+    }
+    .botones{
+        padding-left: 100px;
+    }
     .nuestros-prof-img{
         display: grid;
         width: 100%;
@@ -975,10 +988,10 @@ input:focus{
 
 @media (max-width: 320px){
     .trabajos-grid{
-        padding-left: 90px;
+        padding-left: 120px;
     }
     .botones{
-        padding-left: 90px;
+        margin-left: 100px;
     }
 }
 
@@ -992,6 +1005,7 @@ input:focus{
         display: grid;
         gap: 10px;
         justify-content: center;
+        padding-right: 100px;
     }
     .img1{
         transform: scale(0.9);
@@ -1033,12 +1047,187 @@ input:focus{
 @media(max-width: 320px){
     .trabajos-grid{
         display: grid; 
-        padding-right: 20px;
+        padding-right: 50px;
     }
     .botones{
         padding-left: 20px;
     }
     .grid-footer{
         width: 100%;
+    }
+}
+
+
+/* MEDIA CONSULTANOS TIPO MAQUILLAJE */
+@media (max-width: 1024px){
+    .q-necesit h2{
+        font-size: 20px;
+    }
+    .q-necesit{
+        width: 230px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .card-qnecesit{
+        width: 450px;
+        height: 310px;
+    }
+    .card-qnecesit div h3{
+        font-size: 18px;
+        height: 55px;
+    }
+    .card-qnecesit div p{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .card-qnecesit .maq-part h3{
+        font-size: 19px;
+    }
+    
+}
+
+
+@media (max-width: 425px){
+    .tipo-maquillaje{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .q-necesit h2{
+        font-size: 18px;
+    }
+    .card-qnecesit{
+        width: 350px;
+        height: 260px;
+        margin-top: 20px;
+    }
+    .card-qnecesit div h3{
+        font-size: 18px;
+        height: 50px;
+    }
+    .card-qnecesit div p{
+        font-size: 16px;
+        padding-top: 5px;
+        width: 300px;
+    }
+    .maq-part h3{
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 375px){
+    .q-necesit{
+        margin-top: 60px;
+        width: 205px;
+    }
+    .q-necesit h2{
+        font-size: 17px;
+    }
+    .card-qnecesit{
+        width: 300px;
+        height: 260px;
+    }
+    .card-qnecesit div h3{
+        font-size: 16px;
+        height: 40px;
+    }
+    .card-qnecesit div p{
+        font-size: 14px;
+        padding-top: 5px;
+        width: 250px;
+    }
+    .card-qnecesit .maq-part h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    .q-necesit{
+        margin-top: 60px;
+        width: 205px;
+    }
+    .q-necesit h2{
+        font-size: 16px;
+    }
+    .card-qnecesit{
+        width: 280px;
+        height: 230px;
+        margin-left: 95px;
+    }
+    .card-qnecesit div h3{
+        font-size: 15px;
+        height: 40px;
+    }
+    .card-qnecesit div p{
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .card-qnecesit .maq-part h3{
+        font-size: 15px;
+    }
+} 
+
+/* MEDIA SERVICIOS QUE OFRECEMOS */
+@media (max-width: 768px){
+    .servicios-ofrecemos{
+        margin-right: 20px;
+    }
+    .servicios-ofrecemos h2{
+        font-size: 20px;
+    }
+    .servicios-ofrecemos p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px){
+    .servicios-ofrecemos h2{
+        font-size: 18px;
+    }
+    .servicios-ofrecemos p{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .servicios-ofrecemos h2{
+        font-size: 17px;
+    }
+    .servicios-ofrecemos p{
+        font-size: 13px;
+        margin-left: 3px;
+    }
+}
+
+
+/* MEDIA PRODUCCIONES */
+@media (max-width: 425px){
+    .video-produc{
+        transform: scale(0.8);
+        margin-top: 0;
+        padding-left: 170px;
+    }
+
+    .reservar-turno .botones{
+        padding-left: 120px;
+    }
+}
+
+@media (max-width: 375px){
+    .video-produc{
+        padding-left: 270px;
+    }
+}
+
+@media (max-width: 320px){
+    .video-produc{
+        padding-left: 270px;
+    }
+    .reservar-turno h3{
+        width: 400px;
     }
 }
