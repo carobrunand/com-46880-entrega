@@ -1,0 +1,68 @@
+.consul{
+    padding-top: 120px;
+}
+.q-necesit{
+width: 300px;
+height: 35px;
+background-color: $bg-secundario;
+border-radius: 30px;
+margin: 10px;
+padding-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 10px rgb(92, 92, 92);
+h2{
+    color: $color-secundario;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 10px grey;
+    padding: 10px;
+}
+}
+.tipo-maquillaje{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-evenly;
+margin-bottom: 0px;
+p{
+    text-indent: 10px;
+    word-spacing: 3px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 10px grey;
+}
+.card-qnecesit{
+    width: 550px;
+    height: 200px;
+    background-color: #C0BEBE;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    p{
+        text-align: center;
+        color: $color-secundario;
+        font-family: 'Roboto', sans-serif;
+        margin: 20px;
+    }
+    h3{
+        background-color: $bg-secundario;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 10px;
+        font-size: 20px;
+        color: $color-secundario;
+    }
+}
+}

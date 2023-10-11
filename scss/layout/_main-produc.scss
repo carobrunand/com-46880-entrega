@@ -1,0 +1,19 @@
+.produc{
+    padding-top: 150px;
+    margin-left: 10px;
+    .video-produc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+}
+.reservar-turno{
+    color: $bg-secundario;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 10px grey;
+    margin-left: 10px;
+}

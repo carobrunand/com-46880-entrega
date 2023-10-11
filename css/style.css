@@ -1,91 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&family=Questrial&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+body {
+  background-color: #EAE8F6; }
 
-/* 
-TIPOGRAFIAS
-font-family: 'Heebo', sans-serif;
-font-family: 'Questrial', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-*/
-
-body{
-    background-color: #EAE8F6 ;
-}
-/* INICIO HEADER */
-header{
-    background-color: #D0AADA;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-nav{
+header {
+  background-color: #D0AADA;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    flex-wrap: wrap;
-}
-.nav-bar{
-    display: flex;
-    gap: 10px;
-    list-style: none;
-}
+    flex-wrap: wrap; }
 
+.nav-bar {
+  display: flex;
+  gap: 10px; }
+  .nav-bar li {
+    list-style: none; }
+    .nav-bar li a {
+      text-decoration: none;
+      color: #EAE8F6;
+      background-color: #5B507B;
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+      box-shadow: 5px 5px 10px #5c5c5c;
+      text-shadow: 1px 1px 10px grey; }
+      .nav-bar li a:hover {
+        background-color: #D0AADA; }
 
-.nav-bar li a{
-    text-decoration: none;
-    color: #EAE8F6;
-    background-color: #5B507B;
-    border-radius: 10px; 
-    padding: 8px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 5px 5px 10px rgb(92, 92, 92);
-    text-shadow: 1px 1px 10px grey;
-}
+.nav-logo {
+  width: 250px;
+  height: 70px;
+  display: flex; }
 
-.nav-logo{
-    width: 250px;
-    height: 70px;
-    display: flex;
-}
-.nav-wrapper{
-    width: 100%;
-    margin: 0 auto;
-    padding: 16px;
-}
-nav #toggle, nav label{
-    display: none;
-}
+.nav-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px; }
 
-.nav-bar li a:hover{
-    background-color: #D0AADA;
-}
+nav #toggle,
+nav label {
+  display: none; }
 
-/* INICIO MAIN */
-main{
-    background-color: #EAE8F6;
-    width: 100%;
-}
-
-main p{
-    text-indent: 10px;
-    word-spacing: 3px;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-}
-
-section h2{
+main {
+  background-color: #EAE8F6;
+  width: 100%; }
+  main section h2 {
     color: #5B507B;
     text-transform: uppercase;
     font-size: 24px;
@@ -93,229 +61,210 @@ section h2{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 10px grey;
-}
+    text-shadow: 1px 1px 10px grey; }
+  main p {
+    text-indent: 10px;
+    word-spacing: 3px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify; }
 
-/* INICIO */
-.fotos-banner{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    padding-top: 150px;
-    column-gap: 20px;
-    row-gap: 20px;
-    width: 100%;
-    
-}
-.portada-izquierda{
+.fotos-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  padding-top: 150px;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%; }
+  .fotos-banner .portada-izquierda {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.portada-centro{
+    align-items: center; }
+  .fotos-banner .portada-centro {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.portada-derecha{
+    align-items: center; }
+  .fotos-banner .portada-derecha {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.maquillaje-prof{
+    align-items: center; }
+  .fotos-banner .maquillaje-prof {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    text-align: center;
-}
+    text-align: center; }
+  .fotos-banner div img:hover {
+    box-shadow: 0px 0px 10px #646363; }
 
-.fotos-banner div img:hover{
-    box-shadow: 0px 0px 10px rgb(100, 99, 99);
-}
+.img-sobrenos {
+  display: flex;
+  justify-content: end;
+  margin-right: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .img-sobrenos img:hover {
+    box-shadow: 0px 0px 10px #646363; }
 
-.img-sobrenos{
-    display: flex;
-    justify-content: end;
-    margin-right: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.img-sobrenos img:hover{
-    box-shadow: 0px 0px 10px rgb(100, 99, 99);
-}
-
-/* SOBRE NOSOTROS */
-/* NUESTROS PROFESIONALES */
-.prof{
-    padding-top: 150px;
-}
-.nuestros-prof-img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    justify-content: center;
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px; }
+  .botones button {
+    background-color: #5B507B;
+    padding: 10px;
     margin: 30px;
-}
-.profesional1{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-.profesional2{
+    border: 2px solid #5B507B;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #5c5c5c; }
+    .botones button:hover {
+      background-color: #D0AADA;
+      border: 2px solid #D0AADA; }
+    .botones button a {
+      color: #EAE8F6;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 1px 1px 10px grey; }
+
+.trabajos-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  row-gap: 40px;
+  column-gap: 100px;
+  justify-content: center;
+  margin: 20px; }
+  .trabajos-grid div img:hover {
+    box-shadow: 0px 0px 10px #646363; }
+  .trabajos-grid .img1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.profesional3{
+    align-items: center; }
+  .trabajos-grid .img2 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .trabajos-grid .img3 {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .trabajos-grid .img4 {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .trabajos-grid .img5 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .trabajos-grid .img6 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .trabajos-grid .img7 {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .trabajos-grid .img8 {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.nuestros-prof-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  margin: 30px; }
+  .nuestros-prof-img div img:hover {
+    box-shadow: 0px 0px 10px #646363; }
+  .nuestros-prof-img .profesional1 {
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+  .nuestros-prof-img .profesional2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .nuestros-prof-img .profesional3 {
     display: flex;
     justify-content: start;
-    align-items: center;
-}
-.nuestros-prof h2{
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
-}
-.nuestros-prof-img div img:hover{
-    box-shadow: 0px 0px 10px rgb(100, 99, 99);
-}
+    align-items: center; }
 
-/* NUESTROS TRABAJOS */
-.trabajos-fotos{
-    padding-top: 150px;
-}
-.trabajos-grid div img:hover{
-    box-shadow: 0px 0px 10px rgb(100, 99, 99);
-}
-.trabajos-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    row-gap: 40px;
-    column-gap: 100px;
-    justify-content: center;
-    margin: 20px;
-}
+.nuestros-prof h2 {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 20px; }
 
-.img1{
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img2{
-    grid-row: 2 / 3;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img3{
-    grid-row: 2 / 3;
-    grid-column: 4 / 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img4{
-    grid-row: 2 / 3;
-    grid-column: 5 / 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img5{
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img6{
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img7{
-    grid-row: 3 / 4;
-    grid-column: 4 / 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img8{
-    grid-row: 3 / 4;
-    grid-column: 5 / 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.servicios-ofrecemos {
+  padding-top: 150px; }
 
+.consul {
+  padding-top: 120px; }
 
-
-/* CONSULTANOS */
-.servicios-ofrecemos{
-    padding-top: 150px;
-}
-.consul{
-    padding-top: 120px;
-}
-.q-necesit{
-    width: 300px;
-    height: 35px;
-    background-color: #5B507B;
-    border-radius: 30px;
-    margin: 10px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 10px rgb(92, 92, 92);
-}
-.q-necesit h2{
+.q-necesit {
+  width: 300px;
+  height: 35px;
+  background-color: #5B507B;
+  border-radius: 30px;
+  margin: 10px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px #5c5c5c; }
+  .q-necesit h2 {
     color: white;
     text-align: center;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 10px grey;
-    padding: 10px;
-}
+    padding: 10px; }
 
-.tipo-maquillaje p{
+.tipo-maquillaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0px; }
+  .tipo-maquillaje p {
     text-indent: 10px;
     word-spacing: 3px;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.tipo-maquillaje h3{
+    font-family: 'Roboto', sans-serif; }
+  .tipo-maquillaje h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 10px grey;;
-}
-
-
-
-/* QUE NECESITAS*/
-.tipo-maquillaje{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 0px;
-}
-.card-qnecesit{
+    text-shadow: 1px 1px 10px grey; }
+  .tipo-maquillaje .card-qnecesit {
     width: 550px;
     height: 200px;
     background-color: #C0BEBE;
@@ -324,946 +273,356 @@ section h2{
     margin: 40px;
     padding-top: 0px;
     padding-left: 0px;
-    padding-right: 0px;
-}
-.card-qnecesit p{
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-}
-.card-qnecesit h3{
-    background-color: #5B507B;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-}
+    padding-right: 0px; }
+    .tipo-maquillaje .card-qnecesit p {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 20px; }
+    .tipo-maquillaje .card-qnecesit h3 {
+      background-color: #5B507B;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      padding: 10px;
+      font-size: 20px;
+      color: white; }
 
+.trabajos-fotos {
+  padding-top: 150px; }
 
-/* PRODUCCIONES */
-.produc{
-    padding-top: 150px;
-    margin-left: 10px;
-}
-.reservar-turno h3{
-    color: #5B507B;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 10px grey;
-    margin-left: 10px;
-}
-
-.video-produc{
+.produc {
+  padding-top: 150px;
+  margin-left: 10px; }
+  .produc .video-produc {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-}
+    margin: 20px; }
 
-/* REGISTRARSE FORMULARIO */
-.registrar{
-    padding-top: 120px;
+.reservar-turno {
+  color: #5B507B;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 10px grey;
+  margin-left: 10px; }
+
+.prof {
+  padding-top: 150px; }
+
+.contacto-seccion {
+  padding-top: 160px; }
+  .contacto-seccion h2 {
+    margin-bottom: 0px;
+    padding-bottom: 20px; }
+
+footer {
+  width: 100%;
+  background-color: #D0AADA; }
+  footer .logo-footer {
     display: flex;
     justify-content: center;
-    padding-bottom: 80px;
-}
-.registrar h3{
-    color: #5B507B;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    text-shadow: 1px 1px 10px grey;
-}
-.form-registrarse{
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgb(92, 92, 92);
-    font-family: 'Roboto', sans-serif;
-    width: 80%;
-    margin-bottom: 0px;
-    background-color: #adadad;
-    color: black;
-}
-.field-registrarse{
-    margin-top: 50px;
-    border-radius: 30px;
-    border-color: black;
-}
-.input-registrarse{
-    border-radius: 30px;
-    width: 45%;
-}
-.main-registrarse{
-    padding-left: 90px;
-    width: 90%;
-    padding-top: 180px;
-    padding-bottom: 50px;
-}
-
-/* BOTONES CONSULTANOS,REGISTRARSE */
-.botones{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
-}
-
-.botones button{
-    background-color: #5B507B;
-    padding: 10px;
-    margin: 30px;
-    border: 2px solid #5B507B;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px rgb(92, 92, 92);
-}
-.botones button a{
-    color: #EAE8F6;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px 10px grey;
-}
-.botones button:hover{
-    background-color: #D0AADA;
-    border: 2px solid #D0AADA;
-}
-
-
-
-
-/* PREGUNTAS FRECUENTES */
-
-.titulo-preg-frec{
-    width: 320px;
-    height: 30px;
-    background-color: #D9D9D9;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px rgb(92, 92, 92);
-    margin-top: 10px;
-}
-.titulo-preg-frec h2{
-    color: white;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 10px grey;
-    text-align: center;
-    padding-top: 5px;
-}
-
-.card-preg-frec{
-    width: 70%;
-    height: 70%;
-    background-color: #D0AADA;
-    border-radius: 30px;
-    padding: 10px;
-    margin-top: 50px;
-}
-
-.card-preg-frec div{
-    text-align: start;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 10px;
-    margin: 10px;
-}
-.card-preg-frec div h2{
-    color: white;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.card-preg-frec p{
-    font-size: 16px;
-}
-.display-preg-frec{
-    margin-bottom: 0px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
-
-/* CONTACTO */
-.contacto-seccion{
-    padding-top: 120px;
-}
-.contacto-seccion h2{
-    margin-bottom: 0px;
-    padding-bottom: 20px;
-}
-
-/* INICIO FOOTER */
-
-footer{
-    width: 100%;
-    background-color: #D0AADA;
-}
-
-.logo-footer{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-.logo-footer img{
-    width: 300px;
-    padding-left: 35px;
-}
-
-.grid-redes{
+    padding-top: 20px; }
+    footer .logo-footer img {
+      width: 300px;
+      padding-left: 35px; }
+  footer .grid-redes {
     display: grid;
     grid-template-columns: 10% 10% 10%;
     grid-template-rows: 70%;
     margin-top: 30px;
-    justify-content: center;
-}
-.insta-icon{
-    display: flex;
-    justify-content: end;
-}
-.insta-icon img{
-    height: 100px;
-}
-.face-icon{
-    display: flex;
-    justify-content: center;
-    padding-top: 13px;
-}
-.face-icon img{
-    height: 75px;
-    
-}
-.wpp-icon{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.wpp-icon img{
-    height: 140px;
-}
-
-/* boton preg frecuentes */
-.preguntas-frecuentes button{
-    background-color: #D0AADA;
-    padding: 7px;
-    border: 3px solid #D0AADA;
-    border-radius: 30px;
-    box-shadow: 5px 5px 7px rgb(92, 92, 92);
-}
-.preguntas-frecuentes button a{
-    color: white;
-    text-transform: uppercase;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    text-decoration: none;
-    text-shadow: 1px 1px 10px grey;
-}
-.preguntas-frecuentes{
+    justify-content: center; }
+    footer .grid-redes .insta-icon {
+      display: flex;
+      justify-content: end; }
+      footer .grid-redes .insta-icon img {
+        height: 100px; }
+    footer .grid-redes .face-icon {
+      display: flex;
+      justify-content: center;
+      padding-top: 13px; }
+      footer .grid-redes .face-icon img {
+        height: 75px; }
+    footer .grid-redes .wpp-icon {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer .grid-redes .wpp-icon img {
+        height: 140px; }
+  footer .preguntas-frecuentes {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.copyright p{
+    align-items: center; }
+    footer .preguntas-frecuentes button {
+      background-color: #D0AADA;
+      padding: 7px;
+      border: 3px solid #D0AADA;
+      border-radius: 30px;
+      box-shadow: 5px 5px 7px #5c5c5c; }
+      footer .preguntas-frecuentes button a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        text-decoration: none;
+        text-shadow: 1px 1px 10px grey; }
+  footer .copyright p {
     color: white;
     text-align: center;
     text-transform: capitalize;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 10px grey;
-    margin-top: 10px;
-}
-.copyright p:last-child{
-    margin-bottom: 20px;
-}
+    margin-top: 10px; }
+  footer .copyright:last-child {
+    margin-bottom: 20px; }
 
-
-
-
-/* BOOSTRAP */
-.navbar-custom {
+.display-preg-frec {
+  margin-bottom: 0px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; }
+  .display-preg-frec .card-preg-frec {
+    width: 70%;
+    height: 70%;
     background-color: #D0AADA;
-}
-
-.navbar-nav .nav-link span{
-    color: #EAE8F6;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    text-shadow: 1px 1px 10px grey;
-    padding: 8px;
-    border-radius: 9px;
-    box-shadow: 5px 5px 10px rgb(92, 92, 92);
-}
-
-
-/* MEDIA */
-
-
-@media (max-width: 1024px){
-    header{
-        z-index: 1;
-    }
-    body{
-        background-color: #EAE8F6;
-    }
-    .nav-bar li a{
-        background-color: #d0aada;
-    }
-    .nav-bar li a:hover{
-        background-color: #5b507b;
-    }
-
-    .fotos-banner{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: auto;
-        gap: 50px;
-        margin-bottom: 20px;
-    }
-    .portada-izquierda{
-        transform: scale(0.8);
-    }
-    .portada-centro{
-        transform: scale(0.8);
-    }
-    .portada-derecha{
-        transform: scale(0.8);
-    } 
-    .maquillaje-prof{
-        display: none;
-    }
-    
-    .grid-redes{
-        display: grid;
-        grid-template-columns: 10% 10% 10%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-    }
-    .insta-icon{
-        display: flex;
-        justify-content: center;
-    }
-    .face-icon{
-        display: flex;
-        justify-content: center;
-        padding-top: 13px;
-        padding-left: 10px;
-    }
-    .wpp-icon{
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-}
-
-
-@media (max-width: 768px){
-    .nav-bar li a:hover{
-        background-color: #D0AADA;
-        color: #5B507B;
-    }
-    nav .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 8px 0px;
-    }
-    nav label{
-        display: flex;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 50px; }
+    .display-preg-frec .card-preg-frec div {
+      text-align: start;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      padding-top: 10px;
+      margin: 10px; }
+      .display-preg-frec .card-preg-frec div h2 {
         color: white;
-        cursor: pointer;
-    }
-    .nav-bar li a{
-        box-shadow: none;
-    }
-    nav #toggle:checked ~ .menu{
-        height: 100%;
-    }
-
-
-    section h2{
         font-size: 20px;
-    }
-    main p{
-        font-size: 15px;
-    }
-    .fotos-banner{
-        display: grid;
-        justify-content: center;
-        gap: 15px;
-    }
-    .portada-centro{
-        transform: scale(1);
-    }
-    .portada-derecha{
-        display: none;
-    }
-    .portada-izquierda{
-        display: none;
-    }
-    .maquillaje-prof{
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        text-decoration: underline; }
+    .display-preg-frec .card-preg-frec p {
+      font-size: 16px; }
+  .display-preg-frec .titulo-preg-frec {
+    width: 320px;
+    height: 30px;
+    background-color: #D0AADA;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #5c5c5c;
+    margin-top: 10px; }
+    .display-preg-frec .titulo-preg-frec h2 {
+      color: white;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 1px 1px 10px grey;
+      text-align: center;
+      padding-top: 5px; }
 
-    .trabajos-grid{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 30px;
-        justify-content: center;
-    }
-    .img1{
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img2{
-        grid-column: 4 / 5;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img3{
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img4{
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img5{
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img6{
-        grid-column: 4 / 5;
-        grid-row: 3 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img7{
-        grid-column: 3 / 4;
-        grid-row: 4 / 5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .img8{
-        grid-column: 4 / 5;
-        grid-row: 4 / 5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 1024px) {
+  body {
+    background-color: #EAE8F6; }
+  header {
+    z-index: 1; }
+    header .nav-bar li a {
+      background-color: #D0AADA; }
+      header .nav-bar li a:hover {
+        background-color: #5B507B; }
+  .fotos-banner {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    gap: 50px;
+    margin-bottom: 20px; }
+    .fotos-banner .portada-izquierda {
+      transform: scale(0.8); }
+    .fotos-banner .portada-centro {
+      transform: scale(0.8); }
+    .fotos-banner .portada-derecha {
+      transform: scale(0.8); }
+    .fotos-banner .maquillaje-prof {
+      display: none; }
+  .grid-redes {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    grid-template-rows: 70%;
+    margin-top: 30px;
+    justify-content: center; }
+    .grid-redes .insta-icon {
+      display: flex;
+      justify-content: center; }
+    .grid-redes .face-icon {
+      display: flex;
+      justify-content: center;
+      padding-top: 13px;
+      padding-left: 10px; }
+    .grid-redes .wpp-icon {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .q-necesit {
+    width: 250px;
+    margin-top: 20px; }
+    .q-necesit h2 {
+      font-size: 20px; } }
 
-    .nuestros-prof-img{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-        gap: 10px;
-    }
-    .profesional3{
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  nav #toggle:checked ~ .menu {
+    height: 100%; }
+  nav label {
+    display: flex;
+    color: white;
+    cursor: pointer; }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
+    nav .menu ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 0px; }
+      nav .menu ul li a {
+        box-shadow: none; }
+        nav .menu ul li a:hover {
+          background-color: #D0AADA;
+          color: #5B507B; }
+  main section h2 {
+    font-size: 20px; }
+  main p {
+    font-size: 15px; }
+  main .fotos-banner {
+    display: grid;
+    justify-content: center;
+    gap: 15px; }
+    main .fotos-banner .portada-centro {
+      transform: scale(1); }
+    main .fotos-banner .portada-derecha {
+      display: none; }
+    main .fotos-banner .portada-izquierda {
+      display: none; }
+    main .fotos-banner .maquillaje-prof {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  main .trabajos-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center; }
+    main .trabajos-grid .img1 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img2 {
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img3 {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img4 {
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img5 {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img6 {
+      grid-column: 4 / 5;
+      grid-row: 3 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img7 {
+      grid-column: 3 / 4;
+      grid-row: 4 / 5;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main .trabajos-grid .img8 {
+      grid-column: 4 / 5;
+      grid-row: 4 / 5;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  main .nuestros-prof-img {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 10px; }
+    main .nuestros-prof-img .profesional3 {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  footer .grid-redes {
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    grid-template-rows: 70%;
+    margin-top: 30px;
+    justify-content: center; }
+    footer .grid-redes .insta-icon {
+      display: flex;
+      justify-content: center; }
+    footer .grid-redes .face-icon {
+      display: flex;
+      justify-content: center;
+      padding-top: 13px;
+      padding-left: 10px; }
+    footer .grid-redes .wpp-icon {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  footer .copyright p {
+    font-size: 25px; }
+  .tipo-maquillaje .card-qnecesit {
+    width: 450px;
+    height: 310px; }
+    .tipo-maquillaje .card-qnecesit div h3 {
+      font-size: 18px;
+      height: 55px; }
+    .tipo-maquillaje .card-qnecesit div p {
+      font-size: 16px;
+      padding-top: 20px; }
+    .tipo-maquillaje .card-qnecesit .maq-part h3 {
+      font-size: 19px; }
+  .servicios-ofrecemos {
+    margin-right: 20px; }
+    .servicios-ofrecemos h2 {
+      font-size: 20px; }
+    .servicios-ofrecemos p {
+      font-size: 16px; } }
 
-    .copyright p{
-        font-size: 25px;
-    }
-    .grid-redes{
-        display: grid;
-        grid-template-columns: 15% 15% 15%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-    }
-    .insta-icon{
-        display: flex;
-        justify-content: center;
-    }
-    .face-icon{
-        display: flex;
-        justify-content: center;
-        padding-top: 13px;
-        padding-left: 10px;
-    }
-    .wpp-icon{
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.main-registrarse {
+  padding-left: 90px;
+  width: 90%;
+  padding-top: 180px;
+  padding-bottom: 50px; }
 
-}
-
-@media (max-width: 425px){
-    main p{
-        margin-left: 30px;
-        width: 390px;
-    }
-    .sobre-maquillaje-art{
-        margin-bottom: 30px;
-    }
-    .img-sobrenos{
-        display: none;
-    }
-
-    
-    .nuestros-prof-img{
-        padding-left: 50px;
-        display: grid;
-        gap: 10px;
-    }
-    .profesional1{
-        transform: scale(0.9);
-    }
-    .profesional2{
-        transform: scale(0.9);
-    }
-    .profesional3{
-        transform: scale(0.9);
-    }
-    
-    .grid-redes{
-        display: grid;
-        grid-template-columns: 25% 25% 25%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-    }
-    .insta-icon{
-        display: flex;
-        justify-content: center;
-    }
-    .face-icon{
-        display: flex;
-        justify-content: center;
-        padding-top: 13px;
-        padding-left: 10px;
-    }
-    .wpp-icon{
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 375px){
-    .nav-logo{
-        margin-right: 55px;
-    }
-    .fotos-banner{
-        padding-top: 150px;
-        padding-bottom: 30px;
-    }
-    .maquillaje-prof{
-        display: none;
-    }
-    main p{
-        text-align: center;
-        margin-left: 10px;
-    }
-    .sobre-maquillaje-art{
-        width: 420px;
-    }
-    .trabajos-grid{
-        padding-left: 140px;
-    }
-    .botones{
-        padding-left: 100px;
-    }
-    .nuestros-prof-img{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .profesional1{
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    .profesional2{
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .profesional3{
-        grid-column: 1 / 3;
-        grid-row: 3 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .nuestros-prof{
-        padding-left: 70px;
-    }
-}
-
-@media (max-width: 320px){
-    .trabajos-grid{
-        padding-left: 120px;
-    }
-    .botones{
-        margin-left: 100px;
-    }
-    .grid-redes{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-    }
-    .insta-icon{
-        display: flex;
-        justify-content: center;
-    }
-    .face-icon{
-        display: flex;
-        justify-content: center;
-        padding-top: 13px;
-        padding-left: 10px;
-    }
-    .wpp-icon{
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-/* MEDIA NUESTROS TRABAJOS */
-@media(max-width: 375px){
-    .trabajos-fotos{
-        padding-top: 230px;
-    }
-    .trabajos-grid{
-        display: grid;
-        gap: 10px;
-        justify-content: center;
-        padding-right: 100px;
-    }
-    .img1{
-        transform: scale(0.9);
-    }
-    .img2{
-        transform: scale(0.9);
-    }
-    .img3{
-        transform: scale(0.9);
-    }
-    .img4{
-        transform: scale(0.9);
-    }
-    .img5{
-        transform: scale(0.9);
-    }
-    .img6{
-        transform: scale(0.9);
-    }
-    .img7{
-        transform: scale(0.9);
-    }
-    .img8{
-        transform: scale(0.9);
-    }
-    
-}
-@media(max-width: 320px){
-    .trabajos-grid{
-        display: grid; 
-        padding-right: 50px;
-    }
-    .botones{
-        padding-left: 20px;
-    }
-    
-}
-
-
-/* MEDIA CONSULTANOS TIPO MAQUILLAJE */
-@media (max-width: 1024px){
-    .q-necesit h2{
-        font-size: 20px;
-    }
-    .q-necesit{
-        width: 230px;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 768px){
-    .card-qnecesit{
-        width: 450px;
-        height: 310px;
-    }
-    .card-qnecesit div h3{
-        font-size: 18px;
-        height: 55px;
-    }
-    .card-qnecesit div p{
-        font-size: 16px;
-        padding-top: 20px;
-    }
-    .card-qnecesit .maq-part h3{
-        font-size: 19px;
-    }
-    
-}
-
-
-@media (max-width: 425px){
-    .tipo-maquillaje{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .q-necesit h2{
-        font-size: 18px;
-    }
-    .card-qnecesit{
-        width: 350px;
-        height: 260px;
-        margin-top: 20px;
-    }
-    .card-qnecesit div h3{
-        font-size: 18px;
-        height: 50px;
-    }
-    .card-qnecesit div p{
-        font-size: 16px;
-        padding-top: 5px;
-        width: 300px;
-    }
-    .maq-part h3{
-        font-size: 18px;
-    }
-    
-}
-
-@media (max-width: 375px){
-    .q-necesit{
-        margin-top: 60px;
-        width: 205px;
-    }
-    .q-necesit h2{
-        font-size: 17px;
-    }
-    .card-qnecesit{
-        width: 300px;
-        height: 260px;
-    }
-    .card-qnecesit div h3{
-        font-size: 16px;
-        height: 40px;
-    }
-    .card-qnecesit div p{
-        font-size: 14px;
-        padding-top: 5px;
-        width: 250px;
-    }
-    .card-qnecesit .maq-part h3{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 320px){
-    .q-necesit{
-        margin-top: 60px;
-        width: 205px;
-    }
-    .q-necesit h2{
-        font-size: 16px;
-    }
-    .card-qnecesit{
-        width: 280px;
-        height: 230px;
-        margin-left: 95px;
-    }
-    .card-qnecesit div h3{
-        font-size: 15px;
-        height: 40px;
-    }
-    .card-qnecesit div p{
-        font-size: 13px;
-        padding-top: 5px;
-    }
-    .card-qnecesit .maq-part h3{
-        font-size: 15px;
-    }
-} 
-
-/* MEDIA SERVICIOS QUE OFRECEMOS */
-@media (max-width: 768px){
-    .servicios-ofrecemos{
-        margin-right: 20px;
-    }
-    .servicios-ofrecemos h2{
-        font-size: 20px;
-    }
-    .servicios-ofrecemos p{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 425px){
-    .servicios-ofrecemos h2{
-        font-size: 18px;
-    }
-    .servicios-ofrecemos p{
-        font-size: 14px;
-        margin-left: 10px;
-    }
-}
-
-@media (max-width: 425px){
-    .servicios-ofrecemos h2{
-        font-size: 17px;
-    }
-    .servicios-ofrecemos p{
-        font-size: 13px;
-        margin-left: 3px;
-    }
-}
-
-
-/* MEDIA PRODUCCIONES */
-@media (max-width: 425px){
-    .video-produc{
-        transform: scale(0.8);
-        margin-top: 0;
-        padding-left: 170px;
-    }
-
-    .reservar-turno .botones{
-        padding-left: 120px;
-    }
-}
-
-@media (max-width: 375px){
-    .video-produc{
-        padding-left: 270px;
-    }
-}
-
-@media (max-width: 320px){
-    .video-produc{
-        padding-left: 270px;
-    }
-    .reservar-turno h3{
-        width: 400px;
-    }
-}
-
-/* MEDIA PREGUNTAS FRECUENTES */
-@media(max-width: 425px){
-    .card-preg-frec{
-        width: 400px;
-        height: auto;
-        margin-left: 3px;
-    }
-    .titulo-preg-frec{
-        width: 250px;
-        height: 30px;
-    } 
-    .titulo-preg-frec h2{
-        font-size: 17px;
-    }
-    .card-preg-frec div h2{
-        font-size: 16px;
-    }
-    .card-preg-frec p{
-        font-size: 14px;
-        width: 300px;
-    }
-}
-@media(max-width: 375px){
-    .card-preg-frec{
-        width: 350px;
-        height: auto;
-        margin-left: 3px;
-        margin-top: 65px;
-    }
-    .titulo-preg-frec{
-        width: 250px;
-        height: 30px;
-    } 
-    .titulo-preg-frec h2{
-        font-size: 16px;
-    }
-    .card-preg-frec div h2{
-        font-size: 15px;
-    }
-    .card-preg-frec p{
-        font-size: 13px;
-        width: 270px;
-    }
-}
-@media(max-width: 320px){
-    .card-preg-frec{
-        width: 3000px;
-        height: auto;
-        margin-left: 3px;
-    }
-    .titulo-preg-frec{
-        width: 250px;
-        height: 30px;
-    } 
-    .titulo-preg-frec h2{
-        font-size: 16px;
-    }
-    .card-preg-frec div h2{
-        font-size: 15px;
-    }
-    .card-preg-frec p{
-        font-size: 13px;
-        width: 200px;
-    }
-}
+.contacto-formulario {
+  padding-left: 90px;
+  width: 90%;
+  padding-bottom: 50px; }
