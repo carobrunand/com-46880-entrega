@@ -1,3 +1,129 @@
 @media (max-width: 425px){
+    main{
+        p{
+            margin-left: 30px;
+            width: 390px;
+        }
+        .sobre-maquillaje-art{
+            margin-bottom: 30px;
+            .img-sobrenos{
+                display: none;
+            }
+        }
+        .nuestros-prof-img{
+            padding-left: 50px;
+            display: grid;
+            gap: 10px;
+            .profesional1{
+            transform: scale(0.9);
+            }
+            .profesional2{
+                transform: scale(0.9);
+            }
+            .profesional3{
+                transform: scale(0.9);
+            }
+        }
+    }
+    footer{
+        .grid-redes{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 70%;
+        margin-top: 30px;
+        justify-content: center;
+        .insta-icon{
+        display: flex;
+        justify-content: center;
+            }
+        .face-icon{
+            display: flex;
+            justify-content: center;
+            padding-top: 13px;
+            padding-left: 10px;
+            }
+        .wpp-icon{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        }
+    }
+    .q-necesit{
+        h2{
+            font-size: 18px;
+        }
+    }
+    .tipo-maquillaje{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .card-qnecesit{
+            width: 350px;
+            height: 260px;
+            margin-top: 20px;
+            .maq-part{
+                h3{
+                    font-size: 18px;
+                }
+            }
+            div{
+                h3{
+                    font-size: 18px;
+                    height: 50px;
+                }
+                p{
+                    font-size: 16px;
+                    padding-top: 5px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+    .servicios-ofrecemos{
+        h2{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+    .video-produc{
+        transform: scale(0.8);
+        margin-top: 0;
+        padding-left: 170px;
+    }
+    .reservar-turno{
+        .botones{
+            padding-left: 120px;
+        }
+    }
+    .display-preg-frec{
+        display: flex;
+        .card-preg-frec{
+        width: 400px;
+        height: auto;
+        margin-left: 3px;
+        div{
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+                width: 300px;
+            }
+        }
+        .titulo-preg-frec{
+            width: 300px;
+            height: 30px;
+            h3{
+                font-size: 17px;
+            }
+        } 
+    }
+    }
     
 }

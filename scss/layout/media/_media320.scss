@@ -1,0 +1,116 @@
+@media (max-width:320px){
+    main{
+        h2{
+            width: 100%;
+        }
+        .fotos-banner{
+            padding-left: 15px;
+            margin-bottom: 2px;
+            h2{
+                padding-left: 100px;
+            }
+        }
+        .trabajos-grid{
+            padding-left: 120px;
+        }
+        .botones{
+            margin-left: 30px;
+        }
+    }
+    footer{
+        .grid-redes{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 70%;
+            margin-top: 30px;
+            justify-content: center;
+            .insta-icon{
+                display: flex;
+                justify-content: center;
+            }
+            .face-icon{
+                display: flex;
+                justify-content: center;
+                padding-top: 13px;
+                padding-left: 10px;
+            }
+            .wpp-icon{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .trabajos-grid{
+        display: grid; 
+        padding-right: 50px;
+    }
+    .botones{
+        padding-left: 20px;
+    }
+    .q-necesit{
+        margin-top: 60px;
+        width: 215px;
+        h2{
+            font-size: 16px;
+        }
+    }
+    .tipo-maquillaje{
+        .card-qnecesit{
+            width: 290px;
+            height: 230px;
+            margin-left: 40px;
+            div{
+                h3{
+                    font-size: 15px;
+                    height: 40px;
+                }
+                p{
+                    font-size: 13px;
+                    padding-top: 5px;
+                    width: 260px;
+                }
+            }
+            .maq-part{
+                h3{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .video-produc{
+        padding-left: 270px;
+    }
+    .reservar-turno{
+        h3{
+            width: 400px;
+        }
+    } 
+    .display-preg-frec{
+        display: flex;
+        .card-preg-frec{
+            width: 3000px;
+            height: auto;
+            margin-left: 3px;
+            div{
+                h2{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 13px;
+                    width: 200px;
+                }
+            }
+            .titulo-preg-frec{
+                width: 230px;
+                height: 30px;
+                h2{
+                    font-size: 15px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
