@@ -23,7 +23,7 @@ header{
             background-color: $bg-secundario;
             border-radius: 10px; 
             padding: 8px;
-            font-size: 15px;
+            font-size: map-get($font-size, xs);
             font-family: 'Roboto', sans-serif;
             box-shadow: 5px 5px 10px rgb(92, 92, 92);
             text-shadow: 1px 1px 10px grey;

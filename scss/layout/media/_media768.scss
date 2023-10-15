@@ -35,7 +35,7 @@
             }
         }
         p{
-            font-size: 15px;
+            font-size: map-get($font-size, xs);
         }
         .fotos-banner{
             display: grid;
@@ -176,7 +176,7 @@
                         height: 55px;
                     }
                     p{
-                        font-size: 16px;
+                        font-size: map-get($font-size, sm);
                         padding-top: 20px;
                     }
                 }
@@ -193,7 +193,7 @@
             font-size: 20px;
         }
         p{
-            font-size: 16px;
+            font-size: map-get($font-size, sm);
         }
     }
 }

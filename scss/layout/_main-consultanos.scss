@@ -15,7 +15,7 @@ box-shadow: 5px 5px 10px rgb(92, 92, 92);
 h2{
     color: $color-secundario;
     text-align: center;
-    font-size: 24px;
+    font-size: map-get($font-size, xxl);
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 10px grey;
     padding: 10px;
@@ -30,13 +30,13 @@ margin-bottom: 0px;
 p{
     text-indent: 10px;
     word-spacing: 3px;
-    font-size: 16px;
+    font-size: map-get($font-size, xs);
     font-family: 'Roboto', sans-serif;
 }
 h3{
     text-align: center;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: map-get($font-size, xl);
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 10px grey;
 }
