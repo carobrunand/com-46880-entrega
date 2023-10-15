@@ -13,10 +13,12 @@ header {
   width: 100%; }
   header nav {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    flex-wrap: wrap; }
+    gap: none;
+    padding: 10px; }
 
 .nav-bar {
   display: flex;
@@ -173,6 +175,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   justify-content: center;
+  align-items: none;
+  gap: none;
   margin: 30px; }
   .nuestros-prof-img div img:hover {
     box-shadow: 0px 0px 10px #646363; }

@@ -7,11 +7,8 @@ header{
     top: 0;
     width: 100%;
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(row, wrap, space-between, center, none);
         padding: 10px;
-        flex-wrap: wrap;
     }
 }
 
