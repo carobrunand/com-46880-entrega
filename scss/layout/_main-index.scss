@@ -57,6 +57,39 @@ main{
         box-shadow: 0px 0px 10px rgb(100, 99, 99);
     }
 }
+.fotos-banner {
+	-webkit-animation: fotos-banner 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fotos-banner 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fotos-banner {
+    0% {
+      -webkit-transform: scaleY(0.9);
+              transform: scaleY(0.9);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes fotos-banner {
+    0% {
+      -webkit-transform: scaleY(0.9);
+              transform: scaleY(0.9);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  
 .img-sobrenos{
     display: flex;
     justify-content: end;
@@ -67,6 +100,39 @@ main{
         box-shadow: 0px 0px 10px rgb(100, 99, 99);
     }
 }
+.img-sobrenos {
+	-webkit-animation: img-sobrenos 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: img-sobrenos 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @-webkit-keyframes img-sobrenos {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  @keyframes img-sobrenos {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  
 .botones{
     display: flex;
     justify-content: center;
@@ -78,6 +144,7 @@ main{
         border: 2px solid $bg-secundario;
         border-radius: 30px;
         box-shadow: 5px 5px 10px rgb(92, 92, 92);
+        transition: background-color 0.6s;
         &:hover{
             background-color: $bg-principal;
             border: 2px solid $bg-principal;
