@@ -1,8 +1,14 @@
 @media (max-width: 425px){
     main{
+        section{
+            h2{
+                font-size: map-get($font-size, md);
+            }
+        }
         p{
-            margin-left: 30px;
+            margin-left: 20px;
             width: 390px;
+            font-size: 14px;
         }
         .sobre-maquillaje-art{
             margin-bottom: 30px;
@@ -10,18 +16,65 @@
                 display: none;
             }
         }
-        .nuestros-prof-img{
-            padding-left: 50px;
+        .fotos-banner{
+                display: grid;
+                justify-content: center;
+                gap: 15px;
+                
+                .portada-centro{
+                    transform: scale(0.8);
+                }
+                .portada-derecha{
+                    display: none;
+                }
+                .portada-izquierda{
+                    display: none;
+                }
+        }
+        .trabajos-grid{
             display: grid;
             gap: 10px;
-            .profesional1{
+            justify-content: center;
+            .img1{
             transform: scale(0.9);
             }
-            .profesional2{
+            .img2{
                 transform: scale(0.9);
             }
-            .profesional3{
+            .img3{
                 transform: scale(0.9);
+            }
+            .img4{
+                transform: scale(0.9);
+            }
+            .img5{
+                transform: scale(0.9);
+            }
+            .img6{
+                transform: scale(0.9);
+            }
+            .img7{
+                transform: scale(0.9);
+            }
+            .img8{
+                transform: scale(0.9);
+            }
+        }
+        .nuestros-prof-img{
+            @include grid(25% 25% 25%, auto, center, none, 5px);
+            margin-left: 100px;
+            .profesional1{
+                transform: scale(0.7);
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+            }
+            .profesional2{
+                transform: scale(0.7);
+                grid-row: 1 / 2;
+                grid-column: 3 / 4;
+            }
+            .profesional3{
+                transform: scale(0.7);
             }
         }
     }
@@ -92,13 +145,14 @@
         }
     }
     .video-produc{
-        transform: scale(0.8);
-        margin-top: 0;
-        padding-left: 170px;
+        transform: scale(0.5);
     }
     .reservar-turno{
+        h3{
+            font-size: 16px;
+        }
         .botones{
-            padding-left: 120px;
+            padding-left: 30px;
         }
     }
     .display-preg-frec{

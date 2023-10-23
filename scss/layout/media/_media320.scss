@@ -4,17 +4,58 @@
             width: 100%;
         }
         .fotos-banner{
-            padding-left: 30px;
             margin-bottom: 2px;
             h2{
-                padding-left: 100px;
+                padding-left: 30px;
             }
+            display: grid;
+                justify-content: center;
+                gap: 15px;
+                margin-left: 55px;
+                .portada-centro{
+                    transform: scale(0.7);
+                }
+                .portada-derecha{
+                    display: none;
+                }
+                .portada-izquierda{
+                    display: none;
+                }
         }
         .trabajos-grid{
-            padding-left: 120px;
+            display: grid; 
+            grid-template-columns: auto;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 5px;
+            justify-content: center;
+            margin-left: 60px;
+            .img1{
+                transform: scale(0.7);
+            }
+            .img2{
+                transform: scale(0.7);
+            }
+            .img3{
+                transform: scale(0.7);
+            }
+            .img4{
+                transform: scale(0.7);
+            }
+            .img5{
+                transform: scale(0.7);
+            }
+            .img6{
+                transform: scale(0.7);
+            }
+            .img7{
+                transform: scale(0.7);
+            }
+            .img8{
+                transform: scale(0.7);
+            }
         }
         .botones{
-            margin-left: 30px;
+            margin-left: 10px;
         }
     }
     footer{
@@ -43,12 +84,9 @@
             }
         }
     }
-    .trabajos-grid{
-        display: grid; 
-        padding-right: 50px;
-    }
     .botones{
         padding-left: 20px;
+        transform: scale(0.9);
     }
     .q-necesit{
         margin-top: 60px;
@@ -80,18 +118,21 @@
             }
         }
     }
-    .video-produc{
-        padding-left: 270px;
+    .produc{
+        padding-top: 170px;
+        .video-produc{
+            transform: scale(0.4);
+        }
     }
     .reservar-turno{
         h3{
-            width: 400px;
+            font-size: 14px;
         }
-    } 
+    }
     .display-preg-frec{
         display: flex;
         .card-preg-frec{
-            width: 3000px;
+            width: 300px;
             height: auto;
             margin-left: 3px;
             div{

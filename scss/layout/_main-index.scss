@@ -227,10 +227,14 @@ main{
         align-items: center;
     }
     .profesional2{
-        @extend .profesional1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .profesional3{
-        @extend .profesional1;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 }
 .nuestros-prof{
