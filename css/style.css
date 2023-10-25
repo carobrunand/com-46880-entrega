@@ -841,23 +841,28 @@ footer {
     margin-right: 55px; }
   main p {
     text-align: center;
-    margin-left: 10px;
-    width: 100%; }
+    margin-left: 30px; }
   main .fotos-banner {
-    padding-top: 150px;
-    padding-bottom: 10px;
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-top: 170px;
+    padding-bottom: 20px;
     justify-content: center;
     gap: 15px;
     margin-left: 50px; }
     main .fotos-banner .portada-centro, main .fotos-banner .portada-izquierda, main .fotos-banner .portada-derecha {
-      transform: scale(0.8); }
+      transform: scale(1.6); }
+      main .fotos-banner .portada-centro img, main .fotos-banner .portada-izquierda img, main .fotos-banner .portada-derecha img {
+        width: 100%; }
     main .fotos-banner .portada-derecha {
       display: none; }
     main .fotos-banner .portada-izquierda {
       display: none; }
-  main .sobre-maquillaje-art {
-    width: 420px; }
+    main .fotos-banner .maquillaje-prof {
+      padding-top: 40px; }
+  main .sobre-maquillaje-art p {
+    width: 100%; }
   main .trabajos-grid {
     padding-left: 50px; }
   main .botones {
@@ -953,7 +958,9 @@ footer {
         width: 320px;
         height: 30px; }
         .display-preg-frec .card-preg-frec .titulo-preg-frec h3 {
-          font-size: 14px; } }
+          font-size: 14px; }
+  footer {
+    width: 100%; } }
 
 @media (max-width: 320px) {
   main h2 {
