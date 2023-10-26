@@ -714,8 +714,8 @@ footer {
   main section h2 {
     font-size: 17px; }
   main p {
+    margin: 30px;
     margin-left: 20px;
-    width: 390px;
     font-size: 14px; }
   main .sobre-maquillaje-art {
     margin-bottom: 30px; }
@@ -753,12 +753,11 @@ footer {
       transform: scale(0.9); }
   main .nuestros-prof-img {
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     justify-content: center;
     align-items: none;
-    gap: 5px;
-    margin-left: 100px; }
+    gap: none; }
     main .nuestros-prof-img .profesional1 {
       transform: scale(0.7);
       grid-row: 1 / 2;
@@ -766,9 +765,10 @@ footer {
     main .nuestros-prof-img .profesional2 {
       transform: scale(0.7);
       grid-row: 1 / 2;
-      grid-column: 3 / 4; }
+      grid-column: 2 / 3; }
     main .nuestros-prof-img .profesional3 {
-      transform: scale(0.7); }
+      transform: scale(0.7);
+      grid-column: 1 / 3; }
   footer .grid-redes {
     display: grid;
     grid-template-columns: 25% 25% 25%;
@@ -837,11 +837,10 @@ footer {
           font-size: 17px; } }
 
 @media (max-width: 375px) {
-  .nav-logo {
-    margin-right: 55px; }
   main p {
     text-align: center;
-    margin-left: 30px; }
+    margin-left: 10px;
+    font-size: 13px; }
   main .fotos-banner {
     display: grid;
     grid-template-columns: auto;
@@ -850,9 +849,10 @@ footer {
     padding-bottom: 20px;
     justify-content: center;
     gap: 15px;
-    margin-left: 50px; }
+    margin-left: 12px; }
     main .fotos-banner .portada-centro, main .fotos-banner .portada-izquierda, main .fotos-banner .portada-derecha {
-      transform: scale(1.6); }
+      transform: scale(1.4);
+      padding-right: 6px; }
       main .fotos-banner .portada-centro img, main .fotos-banner .portada-izquierda img, main .fotos-banner .portada-derecha img {
         width: 100%; }
     main .fotos-banner .portada-derecha {
@@ -861,18 +861,18 @@ footer {
       display: none; }
     main .fotos-banner .maquillaje-prof {
       padding-top: 40px; }
-  main .sobre-maquillaje-art p {
-    width: 100%; }
-  main .trabajos-grid {
-    padding-left: 50px; }
+  main .sobre-maquillaje-art {
+    margin-right: 20px; }
+    main .sobre-maquillaje-art p {
+      width: 100%; }
   main .botones {
-    padding-left: 80px; }
+    transform: scale(0.9);
+    padding-left: 20px; }
   main .nuestros-prof-img {
     display: grid;
     width: 100%;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
-    padding-right: 110px; }
+    grid-template-rows: repeat(3, 1fr); }
     main .nuestros-prof-img .profesional1 {
       transform: scale(0.8);
       grid-column: 1 / 3;
@@ -895,30 +895,31 @@ footer {
       justify-content: center;
       align-items: center; }
   main .nuestros-prof {
-    padding-left: 90px; }
-  .trabajos-fotos {
-    padding-top: 160px; }
-  .trabajos-grid {
+    padding-left: 20px; }
+  main .trabajos-grid {
     display: grid;
     gap: 10px;
     justify-content: center;
-    padding-right: 40px; }
-    .trabajos-grid .img1, .trabajos-grid .img2, .trabajos-grid .img3, .trabajos-grid .img4, .trabajos-grid .img5, .trabajos-grid .img6, .trabajos-grid .img7, .trabajos-grid .img8 {
-      transform: scale(0.9); }
-    .trabajos-grid .img2 {
-      transform: scale(0.9); }
-    .trabajos-grid .img3 {
-      transform: scale(0.9); }
-    .trabajos-grid .img4 {
-      transform: scale(0.9); }
-    .trabajos-grid .img5 {
-      transform: scale(0.9); }
-    .trabajos-grid .img6 {
-      transform: scale(0.9); }
-    .trabajos-grid .img7 {
-      transform: scale(0.9); }
-    .trabajos-grid .img8 {
-      transform: scale(0.9); }
+    padding-right: 40px;
+    padding-left: 50px; }
+    main .trabajos-grid .img1, main .trabajos-grid .img2, main .trabajos-grid .img3, main .trabajos-grid .img4, main .trabajos-grid .img5, main .trabajos-grid .img6, main .trabajos-grid .img7, main .trabajos-grid .img8 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img2 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img3 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img4 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img5 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img6 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img7 {
+      transform: scale(0.8); }
+    main .trabajos-grid .img8 {
+      transform: scale(0.8); }
+  .trabajos-fotos {
+    padding-top: 160px; }
   .q-necesit {
     margin-top: 60px;
     width: 225px; }
@@ -960,11 +961,35 @@ footer {
         .display-preg-frec .card-preg-frec .titulo-preg-frec h3 {
           font-size: 14px; }
   footer {
-    width: 100%; } }
+    width: 100%; }
+    footer .grid-redes {
+      display: grid;
+      grid-template-columns: 25% 25% 25%;
+      grid-template-rows: 70%;
+      margin-top: 30px;
+      justify-content: center; }
+      footer .grid-redes .insta-icon {
+        display: flex;
+        justify-content: center; }
+      footer .grid-redes .face-icon {
+        display: flex;
+        justify-content: center;
+        padding-top: 13px;
+        padding-left: 10px; }
+      footer .grid-redes .wpp-icon {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
 
 @media (max-width: 320px) {
   main h2 {
     width: 100%; }
+  main p {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 30px; }
   main .fotos-banner {
     margin-bottom: 2px;
     display: grid;
@@ -972,9 +997,12 @@ footer {
     gap: 15px;
     margin-left: 55px; }
     main .fotos-banner h2 {
-      padding-left: 30px; }
+      padding-left: 10px; }
     main .fotos-banner .portada-centro, main .fotos-banner .portada-izquierda, main .fotos-banner .portada-derecha {
-      transform: scale(0.7); }
+      transform: scale(1.9);
+      padding-right: 10px; }
+      main .fotos-banner .portada-centro img, main .fotos-banner .portada-izquierda img, main .fotos-banner .portada-derecha img {
+        width: 100%; }
     main .fotos-banner .portada-derecha {
       display: none; }
     main .fotos-banner .portada-izquierda {
@@ -1024,9 +1052,6 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center; }
-  .botones {
-    padding-left: 20px;
-    transform: scale(0.9); }
   .q-necesit {
     margin-top: 60px;
     width: 215px; }

@@ -1,11 +1,9 @@
 @media (max-width:375px){
-    .nav-logo{
-        margin-right: 55px;
-    }
     main{
         p{
             text-align: center;
-            margin-left: 30px;
+            margin-left: 10px;
+            font-size: 13px;
         }
         .fotos-banner{
             display: grid;
@@ -15,9 +13,10 @@
             padding-bottom: 20px;
             justify-content: center;
             gap: 15px;
-            margin-left: 50px;
+            margin-left: 12px;
             .portada-centro{
-                transform: scale(1.6);
+                transform: scale(1.4);
+                padding-right: 6px;
                 img{
                     width: 100%;
                 }
@@ -36,19 +35,17 @@
             p{
                 width: 100%;
             }
-        }
-        .trabajos-grid{
-            padding-left: 50px;
+            margin-right: 20px;
         }
         .botones{
-            padding-left: 80px;
+            transform: scale(0.9);
+            padding-left: 20px;
         }
         .nuestros-prof-img{
             display: grid;
             width: 100%;
             grid-template-columns: auto;
             grid-template-rows: repeat(3, 1fr);
-            padding-right: 110px;
             .profesional1{
                 transform: scale(0.8);
                 grid-column: 1 / 3;
@@ -75,41 +72,42 @@
             }
         }
         .nuestros-prof{
-            padding-left: 90px;
+            padding-left: 20px;
+        }
+        .trabajos-grid{
+            display: grid;
+            gap: 10px;
+            justify-content: center;
+            padding-right: 40px;
+            padding-left: 50px;
+            .img1{
+                transform: scale(0.8);
+            }
+            .img2{
+                transform: scale(0.8);
+            }
+            .img3{
+                transform: scale(0.8);
+            }
+            .img4{
+                transform: scale(0.8);
+            }
+            .img5{
+                transform: scale(0.8);
+            }
+            .img6{
+                transform: scale(0.8);
+            }
+            .img7{
+                transform: scale(0.8);
+            }
+            .img8{
+                transform: scale(0.8);
+            }
         }
     }
     .trabajos-fotos{
         padding-top: 160px;
-    }
-    .trabajos-grid{
-        display: grid;
-        gap: 10px;
-        justify-content: center;
-        padding-right: 40px;
-        .img1{
-            transform: scale(0.9);
-        }
-        .img2{
-            transform: scale(0.9);
-        }
-        .img3{
-            transform: scale(0.9);
-        }
-        .img4{
-            transform: scale(0.9);
-        }
-        .img5{
-            transform: scale(0.9);
-        }
-        .img6{
-            transform: scale(0.9);
-        }
-        .img7{
-            transform: scale(0.9);
-        }
-        .img8{
-            transform: scale(0.9);
-        }
     }
     .q-necesit{
         margin-top: 60px;
@@ -175,5 +173,29 @@
     }
     footer{
         width: 100%;
+        .grid-redes{
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            grid-template-rows: 70%;
+            margin-top: 30px;
+            justify-content: center;
+            .insta-icon{
+            display: flex;
+            justify-content: center;
+                }
+            .face-icon{
+                display: flex;
+                justify-content: center;
+                padding-top: 13px;
+                padding-left: 10px;
+                }
+            .wpp-icon{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
     }
 }

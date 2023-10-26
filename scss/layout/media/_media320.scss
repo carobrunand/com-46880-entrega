@@ -3,17 +3,26 @@
         h2{
             width: 100%;
         }
+        p{
+            width: 100%;
+            font-size: 14px;
+            margin-left: 30px;
+        }
         .fotos-banner{
             margin-bottom: 2px;
             h2{
-                padding-left: 30px;
+                padding-left: 10px;
             }
             display: grid;
                 justify-content: center;
                 gap: 15px;
                 margin-left: 55px;
                 .portada-centro{
-                    transform: scale(0.7);
+                    transform: scale(1.9);
+                    padding-right: 10px;
+                    img{
+                        width: 100%;
+                    }
                 }
                 .portada-derecha{
                     display: none;
@@ -83,10 +92,6 @@
                 align-items: center;
             }
         }
-    }
-    .botones{
-        padding-left: 20px;
-        transform: scale(0.9);
     }
     .q-necesit{
         margin-top: 60px;
