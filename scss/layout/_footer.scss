@@ -1,7 +1,6 @@
-
-
 footer{
-    width: 100%;
+    height: auto;
+    width: 100vw;
     background-color: $bg-principal;
     .logo-footer{
         display: flex;
@@ -9,39 +8,17 @@ footer{
         padding-top: 20px;
         img{
             width: 300px;
-            padding-left: 35px;
+            padding-left: 20px;
         }
     }
-    .grid-redes{
-        display: grid;
-        grid-template-columns: 10% 10% 10%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-        .insta-icon{
-            display: flex;
-            justify-content: end;
-            img{
-                height: 100px;
-            }
-        }
-        .face-icon{
-            display: flex;
-            justify-content: center;
-            padding-top: 13px;
-            img{
-                height: 75px;
-            }
-        }
-        .wpp-icon{
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                height: 140px;
-            }
+    .social-icons{
+        text-align: center;
+        padding-bottom: 10px;
+        color: white;
+        a{
+            font-size: 60px;
+            color: white;
+            padding: 20px;
         }
     }
     .preguntas-frecuentes{
@@ -74,9 +51,6 @@ footer{
         font-family: 'Roboto', sans-serif;
         text-shadow: 1px 1px 10px grey;
         margin-top: 10px;
-        }
-        &:last-child{
-            margin-bottom: 20px;
         }
     }
 }

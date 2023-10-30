@@ -35,29 +35,11 @@
             display: none;
         }
     }
-    .grid-redes{
+    .trabajos-grid{
         display: grid;
-        grid-template-columns: 10% 10% 10%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-        .insta-icon{
-            display: flex;
-            justify-content: center;
-        }
-        .face-icon{
-            display: flex;
-            justify-content: center;
-            padding-top: 13px;
-            padding-left: 10px;
-        }
-        .wpp-icon{
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        column-gap: 70px;
     }
     .q-necesit{
         width: 250px;
@@ -67,4 +49,3 @@
         }
     }
 }
-

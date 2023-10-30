@@ -78,32 +78,6 @@
             }
         }
     }
-    footer{
-        .grid-redes{
-        display: grid;
-        grid-template-columns: 25% 25% 25%;
-        grid-template-rows: 70%;
-        margin-top: 30px;
-        justify-content: center;
-        .insta-icon{
-        display: flex;
-        justify-content: center;
-            }
-        .face-icon{
-            display: flex;
-            justify-content: center;
-            padding-top: 13px;
-            padding-left: 10px;
-            }
-        .wpp-icon{
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-        }
-    }
     .q-necesit{
         h2{
             font-size: 18px;

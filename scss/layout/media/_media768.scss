@@ -136,30 +136,6 @@
         }    
     }
     footer{
-        .grid-redes{
-            display: grid;
-            grid-template-columns: 15% 15% 15%;
-            grid-template-rows: 70%;
-            margin-top: 30px;
-            justify-content: center;
-            .insta-icon{
-                display: flex;
-                justify-content: center;
-            }
-            .face-icon{
-                display: flex;
-                justify-content: center;
-                padding-top: 13px;
-                padding-left: 10px;
-            }
-            .wpp-icon{
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
         .copyright{
             p{
                 font-size: 25px;
