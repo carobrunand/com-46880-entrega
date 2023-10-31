@@ -785,16 +785,16 @@ footer {
     font-size: 13px; }
   main .fotos-banner {
     display: grid;
+    width: 98%;
     grid-template-columns: auto;
     grid-template-rows: auto;
     padding-top: 170px;
     padding-bottom: 20px;
     justify-content: center;
-    gap: 15px;
-    margin-left: 12px; }
+    gap: 15px; }
     main .fotos-banner .portada-centro, main .fotos-banner .portada-izquierda, main .fotos-banner .portada-derecha {
       transform: scale(1.4);
-      padding-right: 6px; }
+      padding-left: 3px; }
       main .fotos-banner .portada-centro img, main .fotos-banner .portada-izquierda img, main .fotos-banner .portada-derecha img {
         width: 100%; }
     main .fotos-banner .portada-derecha {
@@ -812,30 +812,8 @@ footer {
     padding-left: 20px; }
   main .nuestros-prof-img {
     display: grid;
-    width: 100%;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr); }
-    main .nuestros-prof-img .profesional1 {
-      transform: scale(0.8);
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    main .nuestros-prof-img .profesional2 {
-      transform: scale(0.8);
-      grid-column: 1 / 3;
-      grid-row: 2 / 3;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    main .nuestros-prof-img .profesional3 {
-      transform: scale(0.8);
-      grid-column: 1 / 3;
-      grid-row: 3 / 4;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
   main .nuestros-prof {
     padding-left: 20px; }
   main .trabajos-grid {
