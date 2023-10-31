@@ -264,7 +264,7 @@ main {
   padding-bottom: 20px; }
 
 .servicios-ofrecemos {
-  padding-top: 150px; }
+  padding-top: 160px; }
 
 .consul {
   padding-top: 120px; }
@@ -886,36 +886,36 @@ footer {
       font-size: 22px; } }
 
 @media (max-width: 320px) {
-  main h2 {
-    width: 100%; }
+  main section h2 {
+    width: 90%;
+    font-size: 15px; }
   main p {
-    width: 100%;
-    font-size: 14px;
-    margin-left: 30px; }
+    width: 90%;
+    font-size: 13px;
+    text-align: center; }
   main .fotos-banner {
-    margin-bottom: 2px;
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     justify-content: center;
     gap: 15px;
-    margin-left: 55px; }
-    main .fotos-banner h2 {
-      padding-left: 10px; }
+    padding-top: 200px; }
     main .fotos-banner .portada-centro, main .fotos-banner .portada-izquierda, main .fotos-banner .portada-derecha {
-      transform: scale(1.9);
-      padding-right: 10px; }
+      transform: scale(1.6); }
       main .fotos-banner .portada-centro img, main .fotos-banner .portada-izquierda img, main .fotos-banner .portada-derecha img {
         width: 100%; }
     main .fotos-banner .portada-derecha {
       display: none; }
     main .fotos-banner .portada-izquierda {
       display: none; }
+    main .fotos-banner h2 {
+      padding-left: 20px; }
   main .trabajos-grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, 1fr);
     gap: 5px;
-    justify-content: center;
-    margin-left: 60px; }
+    justify-content: center; }
     main .trabajos-grid .img1, main .trabajos-grid .img2, main .trabajos-grid .img3, main .trabajos-grid .img4, main .trabajos-grid .img5, main .trabajos-grid .img6, main .trabajos-grid .img7, main .trabajos-grid .img8 {
       transform: scale(0.7); }
     main .trabajos-grid .img2 {
@@ -934,6 +934,12 @@ footer {
       transform: scale(0.7); }
   main .botones {
     margin-left: 10px; }
+  main .nuestros-prof-img {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr); }
+  main .nuestros-prof {
+    padding-right: 20px; }
   .q-necesit {
     margin-top: 60px;
     width: 215px; }
@@ -970,7 +976,7 @@ footer {
         font-size: 13px;
         width: 200px; }
       .display-preg-frec .card-preg-frec .titulo-preg-frec {
-        width: 230px;
+        width: 260px;
         height: 30px; }
         .display-preg-frec .card-preg-frec .titulo-preg-frec h2 {
           font-size: 15px;
