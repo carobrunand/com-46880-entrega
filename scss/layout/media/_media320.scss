@@ -1,4 +1,16 @@
 @media (max-width:320px){
+    header{
+        nav{
+            #toggle:checked ~.menu{
+                height: 100%;
+            }
+        }
+        .nav-logo{
+            width: 200px;
+            height: 65px;
+            display: flex;
+        }
+    }
     main{
         section{
             h2{

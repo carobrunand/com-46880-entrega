@@ -886,6 +886,12 @@ footer {
       font-size: 22px; } }
 
 @media (max-width: 320px) {
+  header nav #toggle:checked ~ .menu {
+    height: 100%; }
+  header .nav-logo {
+    width: 200px;
+    height: 65px;
+    display: flex; }
   main section h2 {
     width: 90%;
     font-size: 15px; }
