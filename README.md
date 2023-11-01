@@ -15,7 +15,7 @@
 
 ------------
 
-##Herramientas utilizadas en el proyecto:
+## Herramientas utilizadas en el proyecto:
 -HTML
 -CSS
 
