@@ -1,20 +1,24 @@
-#KAIROS MAKE UP- MAQUILLAJE ARTISTICO
+#KAIROS MAKEUP- MAQUILLAJE ARTISTICO
+### Servicio de maquillaje artistico personalizado para cada ocasion. 
+- Maquillaje para producciones, para eventos, etc.
 
->primer repositorio en la comision 46880
+------------
 
-## Alumna
 
-- Carolina Brunand
 
-# Profesor:
+## Profesor:
+-Maximiliano Cardenas
+## Tutor:
+-Alesio Adrover
 
-- Maxi Cardenas
 
-# Tutor:
 
-- Edu Arevalo
+------------
 
-# Herramientas utilizadas:
+##Herramientas utilizadas en el proyecto:
+-HTML
+-CSS
 
-- HTML
-- CSS
+
+[![Ejemplo de maquiillaje](https://i.pinimg.com/originals/33/0e/7a/330e7a9cd9f48a94f4aa8c43bff59cc5.jpg "Ejemplo de maquiillaje")](http://https://i.pinimg.com/originals/33/0e/7a/330e7a9cd9f48a94f4aa8c43bff59cc5.jpg "Ejemplo de maquiillaje")
+
